@@ -1,0 +1,7 @@
+Alunos: 
+
+João Marcelo Ferreira Battaglini - 13835472
+Daniel Umeda Kuhn - 13676541
+João Victor Almeida - 13695424
+
+o executável do makefile está na pasta bin de cada diretorio. linux : ./bin/main
