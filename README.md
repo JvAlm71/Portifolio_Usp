@@ -15,4 +15,4 @@ Linguagem: C
 # Introdução a Ciência da Computação
 Linguagem: C++
 
--Para essa matéria foi desenvolvido um jogo em C++, entretanto essa matéria foi feita grande parte em C, só que para esse jogo, C++ era melhor por se tratar de um jogo, C++ facilita a manipulação do jogo. Claro que é um jogo usando conceitos bem básicos de programação, pois essa matéria foi feita em meu primeiro ano de graduação, entretanto já é demonstrado um uso de funções e conceitos, de forma consideravel.
+-Para essa matéria foi desenvolvido um jogo em C++, entretanto essa matéria foi feita grande parte em C, só que para esse jogo, C++ era melhor por se tratar de um jogo, C++ facilita a manipulação do jogo. Claro que é um jogo usando conceitos bem básicos de programação, pois essa matéria foi feita em meu primeiro ano de graduação, entretanto já é demonstrado um uso de funções e conceitos, de forma consideravel. O jogo em questão, foi baseado no famoso jogo de tabuleiro WAR, ele está totalmente jogável.
