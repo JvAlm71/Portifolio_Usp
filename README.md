@@ -10,7 +10,7 @@ Linguagem: Python
 # Estrutura de Dados 
 Linguagem: C
 
--"Encontrando os trabalhos..."
+-Para esse teve alguns trabalhos, por enquanto apenas tem o trabalho dos algoritmos de ordenação, ele está em makefile.
 
 # Introdução a Ciência da Computação
 Linguagem: C++
