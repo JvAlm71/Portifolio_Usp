@@ -7,4 +7,5 @@ Linguagem: Python
 -Para cálculo numérico, a maioria dos problemas alternava entre questões matemáticas e situações em que, por meio da programação, poderíamos solucioná-los. Utilizando .ipynb, resolvemos problemas com base em fundamentos matemáticos. O desenvolvimento desses trabalhos foi de grande importância para o aprendizado de Python e suas aplicações por meio da utilização de bibliotecas.
 
 #Estrutura de Dados 
+Linguagem: C
 -"Encontrando os trabalhos..."
