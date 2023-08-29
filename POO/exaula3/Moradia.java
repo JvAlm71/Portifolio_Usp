@@ -1,4 +1,5 @@
-public class Moradia {
+abstract public class Moradia {
+    
     protected String Endereco;
     protected int Numero;
     protected String Bairro;
