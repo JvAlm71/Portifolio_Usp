@@ -37,5 +37,12 @@ public class Main {
         for(Moradia moradia : moradias){
             System.out.println(moradia);
         }
+        
+        Predio predios[] = new Predio[1];
+        predios[0] = new Predio(1, pessoa1);
+
+        for(Predio predio : predios){
+            System.out.println(predio);
+        }
     }
 }
