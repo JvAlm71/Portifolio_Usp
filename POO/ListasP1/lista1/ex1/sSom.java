@@ -22,5 +22,5 @@ public class sSom {
 
     public void setMarca(String Marca){
         this.Marca = Marca;
-    }
+    }   
 }
