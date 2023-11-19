@@ -1,0 +1,1 @@
+Nesta Pasta de POO é apresentado principalmente os exercícios desenvolvidos por mim para o aprendizado dos aspectos importantes para o conhecimento de JAVA, cada lista tem os enunciados e os programas implementados. Assim, demonstrando o aprendizado desenvolvido.
