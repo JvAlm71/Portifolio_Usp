@@ -1,0 +1,68 @@
+|DE10_LITE_reg
+SW[0] => reg:reg0.d[0]
+SW[1] => reg:reg0.d[1]
+SW[2] => reg:reg0.d[2]
+SW[3] => reg:reg0.d[3]
+SW[4] => reg:reg0.d[4]
+SW[5] => reg:reg0.d[5]
+SW[6] => reg:reg0.d[6]
+SW[7] => reg:reg0.d[7]
+SW[8] => ~NO_FANOUT~
+SW[9] => reg:reg0.en
+KEY[0] => reg:reg0.clk
+KEY[1] => reg:reg0.clr
+LEDR[0] <= reg:reg0.q[0]
+LEDR[1] <= reg:reg0.q[1]
+LEDR[2] <= reg:reg0.q[2]
+LEDR[3] <= reg:reg0.q[3]
+LEDR[4] <= reg:reg0.q[4]
+LEDR[5] <= reg:reg0.q[5]
+LEDR[6] <= reg:reg0.q[6]
+LEDR[7] <= reg:reg0.q[7]
+LEDR[8] <= <GND>
+LEDR[9] <= <GND>
+
+
+|DE10_LITE_reg|reg:reg0
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+clk => q[4]~reg0.CLK
+clk => q[5]~reg0.CLK
+clk => q[6]~reg0.CLK
+clk => q[7]~reg0.CLK
+clr => q[0]~reg0.ACLR
+clr => q[1]~reg0.ACLR
+clr => q[2]~reg0.ACLR
+clr => q[3]~reg0.ACLR
+clr => q[4]~reg0.ACLR
+clr => q[5]~reg0.ACLR
+clr => q[6]~reg0.ACLR
+clr => q[7]~reg0.ACLR
+en => q[7]~reg0.ENA
+en => q[6]~reg0.ENA
+en => q[5]~reg0.ENA
+en => q[4]~reg0.ENA
+en => q[3]~reg0.ENA
+en => q[2]~reg0.ENA
+en => q[1]~reg0.ENA
+en => q[0]~reg0.ENA
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+d[2] => q[2]~reg0.DATAIN
+d[3] => q[3]~reg0.DATAIN
+d[4] => q[4]~reg0.DATAIN
+d[5] => q[5]~reg0.DATAIN
+d[6] => q[6]~reg0.DATAIN
+d[7] => q[7]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

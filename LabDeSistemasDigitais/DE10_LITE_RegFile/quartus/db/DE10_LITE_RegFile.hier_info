@@ -1,0 +1,269 @@
+|DE10_LITE_RegFile
+KEY[0] => regfile:regfile0.clk
+KEY[1] => regfile:regfile0.WE3
+SW[0] => regfile:regfile0.A1[0]
+SW[1] => regfile:regfile0.A1[1]
+SW[2] => regfile:regfile0.A2[0]
+SW[3] => regfile:regfile0.A2[1]
+SW[4] => regfile:regfile0.A3[0]
+SW[5] => regfile:regfile0.A3[1]
+SW[6] => regfile:regfile0.WD3[0]
+SW[7] => regfile:regfile0.WD3[1]
+SW[8] => regfile:regfile0.WD3[2]
+SW[9] => regfile:regfile0.WD3[3]
+LEDR[0] << regfile:regfile0.RD1[0]
+LEDR[1] << regfile:regfile0.RD1[1]
+LEDR[2] << regfile:regfile0.RD1[2]
+LEDR[3] << regfile:regfile0.RD1[3]
+LEDR[4] << regfile:regfile0.RD2[0]
+LEDR[5] << regfile:regfile0.RD2[1]
+LEDR[6] << regfile:regfile0.RD2[2]
+LEDR[7] << regfile:regfile0.RD2[3]
+LEDR[8] << <GND>
+LEDR[9] << <GND>
+
+
+|DE10_LITE_RegFile|regfile:regfile0
+clk => reg:heyOh:3:regX.clk
+clk => reg:heyOh:2:regX.clk
+clk => reg:heyOh:1:regX.clk
+clk => reg:heyOh:0:regX.clk
+WE3 => enables[3].DATAB
+WE3 => enables[2].DATAB
+WE3 => enables[1].DATAB
+WE3 => enables[0].DATAB
+A1[0] => par_inteiro:parA1.input_signal[0]
+A1[1] => par_inteiro:parA1.input_signal[1]
+A2[0] => par_inteiro:parA2.input_signal[0]
+A2[1] => par_inteiro:parA2.input_signal[1]
+A3[0] => par_inteiro:parA3.input_signal[0]
+A3[1] => par_inteiro:parA3.input_signal[1]
+WD3[0] => reg:heyOh:3:regX.d[0]
+WD3[0] => reg:heyOh:2:regX.d[0]
+WD3[0] => reg:heyOh:1:regX.d[0]
+WD3[0] => reg:heyOh:0:regX.d[0]
+WD3[1] => reg:heyOh:3:regX.d[1]
+WD3[1] => reg:heyOh:2:regX.d[1]
+WD3[1] => reg:heyOh:1:regX.d[1]
+WD3[1] => reg:heyOh:0:regX.d[1]
+WD3[2] => reg:heyOh:3:regX.d[2]
+WD3[2] => reg:heyOh:2:regX.d[2]
+WD3[2] => reg:heyOh:1:regX.d[2]
+WD3[2] => reg:heyOh:0:regX.d[2]
+WD3[3] => reg:heyOh:3:regX.d[3]
+WD3[3] => reg:heyOh:2:regX.d[3]
+WD3[3] => reg:heyOh:1:regX.d[3]
+WD3[3] => reg:heyOh:0:regX.d[3]
+RD1[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+RD1[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+RD1[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+RD1[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+RD2[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+RD2[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+RD2[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+RD2[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE10_LITE_RegFile|regfile:regfile0|par_inteiro:parA1
+input_signal[0] => inteiro[0].DATAIN
+input_signal[1] => inteiro[1].DATAIN
+inteiro[0] <= input_signal[0].DB_MAX_OUTPUT_PORT_TYPE
+inteiro[1] <= input_signal[1].DB_MAX_OUTPUT_PORT_TYPE
+inteiro[2] <= <GND>
+inteiro[3] <= <GND>
+inteiro[4] <= <GND>
+inteiro[5] <= <GND>
+inteiro[6] <= <GND>
+inteiro[7] <= <GND>
+inteiro[8] <= <GND>
+inteiro[9] <= <GND>
+inteiro[10] <= <GND>
+inteiro[11] <= <GND>
+inteiro[12] <= <GND>
+inteiro[13] <= <GND>
+inteiro[14] <= <GND>
+inteiro[15] <= <GND>
+inteiro[16] <= <GND>
+inteiro[17] <= <GND>
+inteiro[18] <= <GND>
+inteiro[19] <= <GND>
+inteiro[20] <= <GND>
+inteiro[21] <= <GND>
+inteiro[22] <= <GND>
+inteiro[23] <= <GND>
+inteiro[24] <= <GND>
+inteiro[25] <= <GND>
+inteiro[26] <= <GND>
+inteiro[27] <= <GND>
+inteiro[28] <= <GND>
+inteiro[29] <= <GND>
+inteiro[30] <= <GND>
+inteiro[31] <= <GND>
+
+
+|DE10_LITE_RegFile|regfile:regfile0|par_inteiro:parA2
+input_signal[0] => inteiro[0].DATAIN
+input_signal[1] => inteiro[1].DATAIN
+inteiro[0] <= input_signal[0].DB_MAX_OUTPUT_PORT_TYPE
+inteiro[1] <= input_signal[1].DB_MAX_OUTPUT_PORT_TYPE
+inteiro[2] <= <GND>
+inteiro[3] <= <GND>
+inteiro[4] <= <GND>
+inteiro[5] <= <GND>
+inteiro[6] <= <GND>
+inteiro[7] <= <GND>
+inteiro[8] <= <GND>
+inteiro[9] <= <GND>
+inteiro[10] <= <GND>
+inteiro[11] <= <GND>
+inteiro[12] <= <GND>
+inteiro[13] <= <GND>
+inteiro[14] <= <GND>
+inteiro[15] <= <GND>
+inteiro[16] <= <GND>
+inteiro[17] <= <GND>
+inteiro[18] <= <GND>
+inteiro[19] <= <GND>
+inteiro[20] <= <GND>
+inteiro[21] <= <GND>
+inteiro[22] <= <GND>
+inteiro[23] <= <GND>
+inteiro[24] <= <GND>
+inteiro[25] <= <GND>
+inteiro[26] <= <GND>
+inteiro[27] <= <GND>
+inteiro[28] <= <GND>
+inteiro[29] <= <GND>
+inteiro[30] <= <GND>
+inteiro[31] <= <GND>
+
+
+|DE10_LITE_RegFile|regfile:regfile0|par_inteiro:parA3
+input_signal[0] => inteiro[0].DATAIN
+input_signal[1] => inteiro[1].DATAIN
+inteiro[0] <= input_signal[0].DB_MAX_OUTPUT_PORT_TYPE
+inteiro[1] <= input_signal[1].DB_MAX_OUTPUT_PORT_TYPE
+inteiro[2] <= <GND>
+inteiro[3] <= <GND>
+inteiro[4] <= <GND>
+inteiro[5] <= <GND>
+inteiro[6] <= <GND>
+inteiro[7] <= <GND>
+inteiro[8] <= <GND>
+inteiro[9] <= <GND>
+inteiro[10] <= <GND>
+inteiro[11] <= <GND>
+inteiro[12] <= <GND>
+inteiro[13] <= <GND>
+inteiro[14] <= <GND>
+inteiro[15] <= <GND>
+inteiro[16] <= <GND>
+inteiro[17] <= <GND>
+inteiro[18] <= <GND>
+inteiro[19] <= <GND>
+inteiro[20] <= <GND>
+inteiro[21] <= <GND>
+inteiro[22] <= <GND>
+inteiro[23] <= <GND>
+inteiro[24] <= <GND>
+inteiro[25] <= <GND>
+inteiro[26] <= <GND>
+inteiro[27] <= <GND>
+inteiro[28] <= <GND>
+inteiro[29] <= <GND>
+inteiro[30] <= <GND>
+inteiro[31] <= <GND>
+
+
+|DE10_LITE_RegFile|regfile:regfile0|reg:\heyOh:3:regX
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+clr => q[0]~reg0.ACLR
+clr => q[1]~reg0.ACLR
+clr => q[2]~reg0.ACLR
+clr => q[3]~reg0.ACLR
+en => q[3]~reg0.ENA
+en => q[2]~reg0.ENA
+en => q[1]~reg0.ENA
+en => q[0]~reg0.ENA
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+d[2] => q[2]~reg0.DATAIN
+d[3] => q[3]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE10_LITE_RegFile|regfile:regfile0|reg:\heyOh:2:regX
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+clr => q[0]~reg0.ACLR
+clr => q[1]~reg0.ACLR
+clr => q[2]~reg0.ACLR
+clr => q[3]~reg0.ACLR
+en => q[3]~reg0.ENA
+en => q[2]~reg0.ENA
+en => q[1]~reg0.ENA
+en => q[0]~reg0.ENA
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+d[2] => q[2]~reg0.DATAIN
+d[3] => q[3]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE10_LITE_RegFile|regfile:regfile0|reg:\heyOh:1:regX
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+clr => q[0]~reg0.ACLR
+clr => q[1]~reg0.ACLR
+clr => q[2]~reg0.ACLR
+clr => q[3]~reg0.ACLR
+en => q[3]~reg0.ENA
+en => q[2]~reg0.ENA
+en => q[1]~reg0.ENA
+en => q[0]~reg0.ENA
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+d[2] => q[2]~reg0.DATAIN
+d[3] => q[3]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE10_LITE_RegFile|regfile:regfile0|reg:\heyOh:0:regX
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+clr => q[0]~reg0.ACLR
+clr => q[1]~reg0.ACLR
+clr => q[2]~reg0.ACLR
+clr => q[3]~reg0.ACLR
+en => q[3]~reg0.ENA
+en => q[2]~reg0.ENA
+en => q[1]~reg0.ENA
+en => q[0]~reg0.ENA
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+d[2] => q[2]~reg0.DATAIN
+d[3] => q[3]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

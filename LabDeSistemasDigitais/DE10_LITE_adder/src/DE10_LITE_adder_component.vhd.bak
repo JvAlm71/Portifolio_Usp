@@ -1,0 +1,16 @@
+entity adder is 
+
+
+	port
+	{
+		a,b		:	in		bit_vector(3 downto 0),
+		result	:	out	bit_vector(3 downto 0)
+	};
+end adder;
+
+architecture modular of DE10_LITE_adder is
+
+begin
+
+	a
+end;

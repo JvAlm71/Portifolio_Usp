@@ -1,0 +1,8 @@
+entity fadder is 
+
+	port
+	(
+		a,b,ci	:	in	bit;
+		s,co	:	out	bit
+	);
+end fadder;

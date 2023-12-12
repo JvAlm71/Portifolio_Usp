@@ -1,0 +1,19 @@
+entity counter is
+	generic(n	:	integer	:=	8);
+	
+	port
+	(
+		
+
+			clk,	clr	:	in	bit;
+			q				:	out	bit_vector(n-1 downto 0);
+	);
+end counter;
+	
+architecture top of counter is
+
+
+begin
+
+
+end rtl;

@@ -1,0 +1,70 @@
+|DE10_LITE_counter
+key[0] => counter:counter0.clk
+key[1] => counter:counter0.clr
+sw[0] => ~NO_FANOUT~
+sw[1] => ~NO_FANOUT~
+sw[2] => ~NO_FANOUT~
+sw[3] => ~NO_FANOUT~
+sw[4] => ~NO_FANOUT~
+sw[5] => ~NO_FANOUT~
+sw[6] => ~NO_FANOUT~
+sw[7] => ~NO_FANOUT~
+LEDR[0] << counter:counter0.q[0]
+LEDR[1] << counter:counter0.q[1]
+LEDR[2] << counter:counter0.q[2]
+LEDR[3] << counter:counter0.q[3]
+LEDR[4] << <GND>
+LEDR[5] << <GND>
+LEDR[6] << <GND>
+LEDR[7] << <GND>
+LEDR[8] << <GND>
+LEDR[9] << <GND>
+
+
+|DE10_LITE_counter|counter:counter0
+clk => ourtff:tff_0.clk
+clk => ourtff:gen:1:tff_i.clk
+clk => ourtff:gen:2:tff_i.clk
+clk => ourtff:gen:3:tff_i.clk
+clr => ourtff:tff_0.clr
+clr => ourtff:gen:1:tff_i.clr
+clr => ourtff:gen:2:tff_i.clr
+clr => ourtff:gen:3:tff_i.clr
+q[0] <= ourtff:tff_0.q
+q[1] <= ourtff:gen:1:tff_i.q
+q[2] <= ourtff:gen:2:tff_i.q
+q[3] <= ourtff:gen:3:tff_i.q
+
+
+|DE10_LITE_counter|counter:counter0|ourtff:tff_0
+clk => q~reg0.CLK
+clr => q~reg0.ACLR
+t => q.IN1
+t => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE10_LITE_counter|counter:counter0|ourtff:\gen:1:tff_i
+clk => q~reg0.CLK
+clr => q~reg0.ACLR
+t => q.IN1
+t => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE10_LITE_counter|counter:counter0|ourtff:\gen:2:tff_i
+clk => q~reg0.CLK
+clr => q~reg0.ACLR
+t => q.IN1
+t => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE10_LITE_counter|counter:counter0|ourtff:\gen:3:tff_i
+clk => q~reg0.CLK
+clr => q~reg0.ACLR
+t => q.IN1
+t => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

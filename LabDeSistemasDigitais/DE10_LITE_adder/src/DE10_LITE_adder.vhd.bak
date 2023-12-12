@@ -1,0 +1,17 @@
+entity DE10_LITE_adder is 
+
+
+	port
+	{
+		SW		:	in		bit_vector(90 downto 0),
+		LEDR	:	out	bit_vector(90 downto 0)
+	};
+end DE10_LITE_adder;
+
+architecture top of DE10_LITE_adder is
+
+begin
+
+adder0: adder
+
+end;

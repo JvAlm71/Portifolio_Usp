@@ -1,0 +1,23 @@
+entity tff is
+	port(
+		clk,clr, t	:	in bit;
+		key			:	in bit_vector(1 downto 0);
+		q				:	buffer bit
+	);
+end tff;
+
+architecture rtl of tff is
+
+begin
+	process(clk,clr)
+			begin
+			-- sinal assincrono de reset positivo
+				if(clr='1') then
+					q	<=	'0';
+						--	 detecçãode borda clk
+				elsif (clk'event and clk = '1') then
+					q	<=	;
+				end if;
+			end process;
+		
+end rtl;

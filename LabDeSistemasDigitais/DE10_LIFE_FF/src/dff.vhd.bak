@@ -1,0 +1,23 @@
+entity dff is
+	port(
+		clk,clr,d : in bit;
+		key: in bit_vector(1 downto 0);
+		q: out bit
+	);
+end dff;
+
+architecture rtl of dff is
+
+begin
+	process(clk,clr)
+			begin
+			-- sinal assincrono de reset positivo
+				if(clr='1') then
+					q	<=	'0';
+						--	 detecçãode borda clk
+				elsif (clk'event and clk = '1') then
+					q	<=	d;
+				end if;
+			end process;
+		
+end rtl;
