@@ -1,88 +1,181 @@
-/*
- *   Dados dos integrantes:
- *
- *   -> Lucas Sales Duarte - 11734490
- *   -> João Victor de Almeida - 13695424
- *   Alunos do curso de graduação de engenharia de computação
- */
 
-//  inserir bibliotecas com as funções locais
-#include "structs.h"
-#include "func1.h"
-#include "func2.h"
-#include "func3.h"
-#include "func4.h"
+#include "structsBTree.h"
+#include "B-Tree.h"
+#include "func5.h"
+#include "func6.h"
+#include "func7.h"
+char *outArchiveName;
 
 int main()
 {
 
     //  -- - -- -- - -- -- - -- -- - -- -- - -- -- - -- -- - -- -- - -- -- - --
+
+    /*  Sintaxe muito parecida com a main do projeto introdutório
+     *  pois reutiliza da mesma lógica de entrada de decisões das funcionalidades
+     */
+
     //  leitura de entrada de decisão:
 
     char decision;
     char argumento_1[MAX_STRING_LENGTH];
     char argumento_2[MAX_STRING_LENGTH];
     char argumento_3[MAX_STRING_LENGTH];
-    char argumento_4[MAX_STRING_LENGTH];
     scanf("%c", &decision); // recebe a decisão
 
-    if (decision != '1' && decision != '2' && decision != '3' && decision != '4')
+    if (decision != '5' && decision != '6' && decision != '7')
     {
         printf("-> Erro de decisão\n"); // caso a escolha n seja válida
         return 1;
     }
 
-    // scanf("%s", argumento_4);
-    // const char *argumento_4 = argv[4];   //  Caso seja necessário
-    // const char *argumento_5 = argv[5];   //  Caso seja necessário
-
-    // printf("os argumentos são \t%s\t%s\t%s\n", argumento_1, argumento_2, argumento_3);  //   Ver o que está sendo lido no momento
-
-    // const char csvArchiveName[] = "dados1.csv";  // inserção manual do nome dos arquivos para debug
-    // const char binArchiveName[] = "output_file.bin"; // inserção manual do nome dos arquivos para debug
-
-    const char *csvArchiveName;
-    const char *binArchiveName;
-
-    int n;
-    int RRN;
+    char *binRegName;
+    int N;
     switch (decision)
     {
     case '1':
-        scanf("%s", argumento_2);
-        scanf("%s", argumento_3);
-        csvArchiveName = argumento_2;
-        binArchiveName = argumento_3;
-        // csvArchiveName = "dados1.csv";  // inserção manual do nome dos arquivos para debug
-        // binArchiveName = "dados1.bin"; // inserção manual do nome dos arquivos para debug
-        if (Functionality_1(csvArchiveName, binArchiveName))
-        {
-            printf("\nFalha no processamento do arquivo.");
-        };
-        break;
-    case '2': // Supondo que a opção 2 seja para recuperar e exibir os dados
-        scanf("%s", argumento_2);
-        binArchiveName = argumento_2;
-        functionality_2(binArchiveName);
-        break;
-
+    case '2':
     case '3':
-        // printf("tamanho cabcalho:\t|%ld|\n",sizeof(Cabecalho)); // teste para averiguar o tamanho do cabecalho no inicio do arquivo
-        scanf("%s", argumento_2);
-        scanf("%s", argumento_3);
-
-        n = atoi(argumento_3); //  pega o valor de n
-        binArchiveName = argumento_2;
-
-        functionality_3(binArchiveName, n);
-        break;
     case '4':
+    case '5':
         scanf("%s", argumento_2);
         scanf("%s", argumento_3);
+        binRegName = argumento_2;
+        outArchiveName = argumento_3;
 
-        binArchiveName = argumento_2;
-        RRN = atoi(argumento_3);
-        functionality_4(binArchiveName, RRN);
+        functionality_5(binRegName, outArchiveName);
+
+        /*
+        // teste para p1
+        char *a = "Z";
+        char *b = "Y";
+        char *c = "X";
+        char *d = "W";
+        char *e = "V";
+        char *f = "U";
+        char *g = "T";
+        char *h = "S";
+        char *i = "R";
+        char *j = "Q";
+        char *k = "P";
+        char *l = "O";
+        char *m = "N";
+        char *n = "M";
+        char *o = "L";
+        char *p = "K";
+        char *q = "J";
+        char *r = "I";
+        char *s = "H";
+        char *t = "G";
+        char *u = "F";
+        char *v = "E";
+        char *w = "D";
+        char *x = "C";
+        char *y = "B";
+        char *z = "A";
+
+        // teste para p4
+        // char *a = "A";
+        // char *b = "B";
+        // char *c = "C";
+        // char *d = "D";
+        // char *e = "E";
+        // char *f = "F";
+        // char *g = "G";
+        // char *h = "H";
+        // char *i = "I";
+        // char *j = "J";
+
+        // char *a = "A";
+        // char *b = "Z";
+        // char *c = "W";
+        // char *d = "U";
+        // char *e = "V";
+        // char *f = "C";
+        // char *g = "I";
+        // char *h = "F";
+        // Dados dados;
+
+        BTreeNode *root;
+        root = initNode();
+        int highestTree = 0;
+        // insertIndexString(&root, a, &highestTree);
+        // insertIndexString(&root, b, &highestTree);
+        // insertIndexString(&root, c, &highestTree);
+        // insertIndexString(&root, d, &highestTree);
+        // insertIndexString(&root, e, &highestTree);
+        // insertIndexString(&root, f, &highestTree);
+        // insertIndexString(&root, g, &highestTree);
+        // insertIndexString(&root, h, &highestTree);
+        // insertIndexString(&root, i, &highestTree);
+        // insertIndexString(&root, j, &highestTree);
+        // insertIndexString(&root, k, &highestTree);
+        // insertIndexString(&root, l, &highestTree);
+        // insertIndexString(&root, m, &highestTree);
+        // insertIndexString(&root, n, &highestTree);
+        // insertIndexString(&root, o, &highestTree);
+        // insertIndexString(&root, p, &highestTree);
+        // insertIndexString(&root, q, &highestTree);
+        // insertIndexString(&root, r, &highestTree);
+        // insertIndexString(&root, s, &highestTree);
+        // insertIndexString(&root, t, &highestTree);
+        // insertIndexString(&root, u, &highestTree);
+        // insertIndexString(&root, v, &highestTree);
+        // insertIndexString(&root, w, &highestTree);
+        // insertIndexString(&root, x, &highestTree);
+        // insertIndexString(&root, y, &highestTree);
+        // insertIndexString(&root, z, &highestTree);
+
+        insertIndexString(&root, "z", &highestTree);
+        insertIndexString(&root, "y", &highestTree);
+        insertIndexString(&root, "x", &highestTree);
+        insertIndexString(&root, "w", &highestTree);
+        insertIndexString(&root, "v", &highestTree);
+        insertIndexString(&root, "u", &highestTree);
+        insertIndexString(&root, "t", &highestTree);
+        insertIndexString(&root, "s", &highestTree);
+        insertIndexString(&root, "r", &highestTree);
+        insertIndexString(&root, "q", &highestTree);
+        insertIndexString(&root, "p", &highestTree);
+        insertIndexString(&root, "o", &highestTree);
+        insertIndexString(&root, "n", &highestTree);
+        insertIndexString(&root, "m", &highestTree);
+        insertIndexString(&root, "l", &highestTree);
+        insertIndexString(&root, "k", &highestTree);
+        insertIndexString(&root, "j", &highestTree);
+        insertIndexString(&root, "i", &highestTree);
+        insertIndexString(&root, "h", &highestTree);
+        insertIndexString(&root, "g", &highestTree);
+        insertIndexString(&root, "f", &highestTree);
+        insertIndexString(&root, "e", &highestTree);
+        insertIndexString(&root, "d", &highestTree);
+        insertIndexString(&root, "c", &highestTree);
+        insertIndexString(&root, "b", &highestTree);
+        insertIndexString(&root, "a", &highestTree);
+        */
+        break;
+    case '6':
+        scanf("%s", argumento_1);
+        scanf("%s", argumento_2);
+        scanf("%s", argumento_3);
+        binRegName = argumento_1;
+        outArchiveName = argumento_2;
+        N = atoi(argumento_3);
+
+        functionality_6(binRegName, outArchiveName, N);
+        break;
+    case '7':
+        scanf("%s", argumento_1);
+        scanf("%s", argumento_2);
+        scanf("%s", argumento_3);
+        binRegName = argumento_1;
+        outArchiveName = argumento_2;
+        N = atoi(argumento_3);
+
+        functionality_7(binRegName, outArchiveName, N);
+        break;
+    case '8':
+
         break;
     default:
         break;
