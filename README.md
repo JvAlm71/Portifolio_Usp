@@ -2,6 +2,8 @@
 
 -In this repository, I will store my codes created for college to maintain a portfolio and demonstrate my skills in certain languages and situations proposed by the professors. Below, I will describe what is currently in each folder:
 
+## It's worth noting that for each project shown, within their folders are their respective explanations, so please enter and view them properly.
+
 # Numerical Calculus:
 
 Language: Python

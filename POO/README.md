@@ -1,1 +1,1 @@
-Nesta Pasta de POO é apresentado principalmente os exercícios desenvolvidos por mim para o aprendizado dos aspectos importantes para o conhecimento de JAVA, cada lista tem os enunciados e os programas implementados. Assim, demonstrando o aprendizado desenvolvido.
+In this OOP (Object-Oriented Programming) Folder, mainly the exercises developed by me for learning the important aspects of JAVA knowledge are presented. Each list has the statements and the implemented programs, thus demonstrating the developed learning.
