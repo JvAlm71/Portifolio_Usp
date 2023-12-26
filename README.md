@@ -1,33 +1,39 @@
-# Códigos e Trabalhos
--Nesse repositório guardarei os meus códigos feitos para a faculdade, para garantir um portifólio e demonstrar minhas competências em determinadas linguagens e situações propostas pelos professores. 
-Abaixo descreverei o que tem previamente em cada pasta:
+# Codes and Works
 
-# Cálculo Númerico:
-Linguagem: Python
+-In this repository, I will store my codes created for college to maintain a portfolio and demonstrate my skills in certain languages and situations proposed by the professors. Below, I will describe what is currently in each folder:
 
--Para cálculo numérico, a maioria dos problemas alternava entre questões matemáticas e situações em que, por meio da programação, poderíamos solucioná-los. Utilizando .ipynb, resolvemos problemas com base em fundamentos matemáticos. O desenvolvimento desses trabalhos foi de grande importância para o aprendizado de Python e suas aplicações por meio da utilização de bibliotecas.
+# Numerical Calculus:
 
-# Estrutura de Dados 
-Linguagem: C
+Language: Python
 
--Para esse teve alguns trabalhos, por enquanto apenas tem o trabalho dos algoritmos de ordenação, ele está em makefile.
+-For numerical calculus, most problems alternated between mathematical questions and situations where, through programming, we could solve them. Using .ipynb, we solved problems based on mathematical fundamentals. The development of these works was of great importance for learning Python and its applications through the use of libraries.
 
-# Introdução a Ciência da Computação
-Linguagem: C++
+# Data Structures:
 
--Para essa matéria foi desenvolvido um jogo em C++, entretanto essa matéria foi feita grande parte em C, só que para esse jogo, C++ era melhor por se tratar de um jogo, C++ facilita a manipulação do jogo. Claro que é um jogo usando conceitos bem básicos de programação, pois essa matéria foi feita em meu primeiro ano de graduação, entretanto já é demonstrado um uso de funções e conceitos, de forma consideravel. O jogo em questão, foi baseado no famoso jogo de tabuleiro WAR, ele está totalmente jogável.
+Language: C
 
-# Internet das Coisas:
-Linguagem: C++, Arduino
+-For this subject, there were some assignments, for now, it only has the sorting algorithms work, which is in a makefile.
 
-Nessa disciplina desenvolvi um projeto IoT em criar um dispositivo utilizando ESP-32 para verificar a umidade e temperatura de um dos laboratórios da USP. Na pasta de IoT estará melhor especificado a documentação utilizada no trabalho. Esse trabalho contempla uma vasta gama de conhecimentos, BEM COMPLETO. Na pasta estará todo o trabalho documento, complemtamente
+# Introduction to Computer Science:
 
-# Laboratório de Sistemas Digitais:
-Linguagem: VHDL
+Language: C++
 
-Nessa disciplina desenvolvi programação orientada a maquina, utilizando Quartus. O intuito final seria juntar todos os códigos desenvolvidos para sintetizar em um processador. Na pasta estara os respectivos PDF de cada pratica e portifolio de desenvolvimento em linguagem de maquina  VHDL.
+-For this course, a game was developed in C++, however, this subject was largely taught in C, but for this game, C++ was better as it involves a game, and C++ facilitates the manipulation of the game. Of course, it is a game using very basic programming concepts, as this subject was taken in my first year of undergraduate studies, but it already demonstrates a considerable use of functions and concepts. The game in question was based on the famous board game WAR, and it is fully playable.
 
-# Organização e Arquitetura de Computadores:
-Linguagem: Assembly
+# Internet of Things:
 
-Nessa disciplina foi desenvolvido 2 projetos, um relacionado a um jogo em assembly e outro instruções para um processador do nosso professor na disciplina, ambos projetos ajudarama  desenvolver a capacidade do entendimento de como é a estrutura hierarquica de um computador
+Language: C++, Arduino, Docker, SQL
+
+In this course, I developed an IoT project to create a device using ESP-32 to monitor the humidity and temperature of one of the USP laboratories. In the IoT folder, the documentation used in the work will be better specified. This work encompasses a wide range of knowledge, VERY COMPLETE. The folder will contain the entire documented work, completely.
+
+# Digital Systems Laboratory:
+
+Language: VHDL
+
+In this course, I developed machine-oriented programming using Quartus. The final goal was to combine all the developed codes to synthesize in a processor. The folder will contain the respective PDFs of each practice and a portfolio of development in the machine language VHDL.
+
+# Organization and Architecture of Computers:
+
+Language: Assembly
+
+In this course, 2 projects were developed, one related to a game in assembly and another to instructions for a processor of our professor in the course, both projects helped to develop the ability to understand the hierarchical structure of a computer.
