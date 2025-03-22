@@ -1,1 +1,0 @@
-In this OOP (Object-Oriented Programming) Folder, mainly the exercises developed by me for learning the important aspects of JAVA knowledge are presented. Each list has the statements and the implemented programs, thus demonstrating the developed learning.
